@@ -28,6 +28,7 @@ public class Pool extends PApplet {
 		background(255);
 		ball.applyForce(gravity);
 		
+		
 		if(water.isInside(ball.location)){
 			PVector dragForce = water.drag(ball.velocity, ball.area);
 			ball.applyForce(dragForce);
@@ -38,6 +39,8 @@ public class Pool extends PApplet {
 		ball.display();
 		ball.checkEdges();
 		
+		fill(0,0,150,100);
+		rect(water.x, water.y, water.w, water.h);
 		
 	}
 

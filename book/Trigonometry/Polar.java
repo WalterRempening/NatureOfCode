@@ -30,9 +30,9 @@ public class Polar extends PApplet{
 		location.x = r * cos(theta);
 		location.y = r * sin(theta);
 		translate(width/2, height/2);
-//		strokeWeight(5);
-//		stroke(theta+r,0, r);
-//		line(0,0,location.x, location.y);
+		strokeWeight(5);
+		stroke(theta+r,0, r);
+		line(0,0,location.x, location.y);
 		noStroke();
 		fill(theta,0,theta+r);
 		ellipse(location.x, location.y, 10, 10);
