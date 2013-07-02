@@ -51,7 +51,7 @@ public class Waves extends PApplet {
 	public void draw(){
 		background(255);
 //		angle +=angVel;
-		fill(180);
+		fill(180,150);
 		strokeWeight(5);
 		
 		for (int i = 0; i < 50; i++) {
